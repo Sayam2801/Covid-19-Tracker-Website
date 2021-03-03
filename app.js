@@ -17,45 +17,11 @@ app.get("/", function(req,res) {
     res.render("index");
 });
 
-// app.get("/countries", function(req,res) {
-//   res.render("allcountries", {storeCountryNames:storeCountryNames});
-// });
-//
-// app.get("/global", function(req,res) {
-//   res.render("global");
-// });
-//
-// app.get("/country", function(req,res) {
-//   res.render("country");
-// });
-// app.get("/country", function(req,res) {
-//   const countryName = _.camelCase(req.body.cName);
-//   const cases = req.body.cases;
-//   const todayCases = req.body.todayCases;
-//   const deaths = req.body.todayCases;
-//   const recovered = req.body.recovered;
-//   const active = req.body.active;
-//   const critical = req.body.critical;
-//   const casesPerOneMillion = req.body.casesPerOneMillion;
-//   const deathsPerOneMillion = req.body.deathsPerOneMillion;
-//   const totalTests = req.body.totalTests;
-//   const testsPerOneMillion = req.body.testsPerOneMillion;
-//   res.render("country",{
-//     name: countryName,
-//     noc: cases,
-//     notc: todayCases,
-//     nod: deaths,
-//     nor: recovered,
-//     noa: active,
-//     nocr: critical,
-//     nocpom: casesPerOneMillion,
-//     nodpom: deathsPerOneMillion,
-//     nott: totalTests,
-//     notpom: testsPerOneMillion
-//   });
-// });
+app.get("/countryhelper",function(req,res) {
+  res.render("country");
+});
 
-app.post("/records", function(req,res) {
+app.post("/", function(req,res) {
      let url = "https://coronavirus-19-api.herokuapp.com";
      const chosenOption = _.lowerCase(req.body.option);
      const cName = _.camelCase(req.body.cName);
@@ -110,7 +76,7 @@ app.post("/records", function(req,res) {
                   }
                 }
                 console.log(JSON.parse(data));
-                res.render("country", {countryDetails: temp });
+                res.render("countryhelper", {countryDetails: temp });
               }
          });
      });
