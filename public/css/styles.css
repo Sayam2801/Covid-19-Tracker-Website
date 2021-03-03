@@ -1,0 +1,48 @@
+body {
+  background-image: linear-gradient(aqua,yellow,pink);
+  height:50rem;
+  text-align: center;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bolder;
+  color:blue;
+  text-decoration: underline;
+  text-decoration-color: #6b6715;
+}
+p {
+  color:red;
+  font-size:1.4rem;
+  margin-top:3rem;
+  font-family: 'Arimo', sans-serif;
+  font-weight:bold;
+}
+li {
+  font-family: 'Merriweather', serif;
+  font-size:1rem;
+  color:#05a64b;
+}
+label {
+  display: block;
+  color:#702200;
+  font-weight:bold;
+}
+input {
+  border:2px solid #057368;
+  border-radius: 10%;
+  border-color: #bf75be;
+  background-color: #b89cb7;
+  display: block;
+  margin:auto;
+}
+button {
+  margin-top:1rem;
+}
+span {
+  font-weight:bold;
+  color:#a605a3;
+}
+ul {
+  text-align: center;
+    list-style-position: inside;
+}
