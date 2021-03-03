@@ -1,0 +1,15 @@
+<%- include('partials/header2') -%>
+     <h1>Covid-19 Tracker</h1>
+     <p>Options are: </p>
+     <ul>
+       <li>Continent-Wise</li>
+       <li>Country-Wise</li>
+       <li>Location-Wise</li>
+    </ul>
+     <form action="/records" method="post">
+       <h1>Enter your option:</h1>
+       <input type="text" class="enteredOption" name="option" placeholder="Global/Countries/Country">
+       <input type="text" name="cName" placeholder="Country Name">
+       <button type="submit" name="button">Submit</button>
+     </form>
+<%- include('partials/footer') -%>
