@@ -1,10 +1,37 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-  </body>
-</html>
+<%- include('partials/allcheader') -%>
+<div class="country">
+  <div id="country" class="select">Country</div>
+  <table>
+              <tr>
+                <td>Country</td>
+                <td>Cases</td>
+                <td>Today Cases</td>
+                <td>Deaths</td>
+                <td>Today Deaths</td>
+                <td>Recovered Cases</td>
+                <td>Active Cases</td>
+                <td>Critical Cases</td>
+                <td>Cases Per One Million</td>
+                <td>Deaths Per One Million</td>
+                <td>Total tests conducted</td>
+                <td>Tests Per One Million</td>
+              </tr>
+        <%     for(var i=0;i<storeCountryNames.length;i++){ %>
+                <tr>
+                  <li><%= storeCountryNames[i].coName %></li>
+                  <li><%= storeCountryNames[i].noc %></li>
+                  <li><%= storeCountryNames[i].notc %></li>
+                  <li><%= storeCountryNames[i].nod %></li>
+                  <li><%= storeCountryNames[i].notd %></li>
+                  <li><%= storeCountryNames[i].nor %></li>
+                  <li><%= storeCountryNames[i].noa %></li>
+                  <li><%= storeCountryNames[i].nocpom %></li>
+                  <li><%= storeCountryNames[i].nocr %></li>
+                  <li><%= storeCountryNames[i].nodpom %></li>
+                  <li><%= storeCountryNames[i].nott %></li>
+                  <li><%= storeCountryNames[i].notpom %></li>
+               </tr>
+        <%  }   %>
+  </table>
+</div>
+<%- include('partials/footer') -%>
