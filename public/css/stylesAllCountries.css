@@ -1,0 +1,25 @@
+table {
+  margin:5rem auto 5rem;
+    border-spacing: 1rem;
+}
+tr:nth-child(12n) {
+  margin-bottom:5rem;
+  /* background-color: red; */
+}
+body {
+  background-image: linear-gradient(green,yellow,grey,aqua);
+}
+td {
+  font-family: 'Merriweather', serif;
+  font-size:1.5rem;
+  color:#0c0f99;
+  border:2px solid #bf2f15;
+  border-width: thick;
+}
+h1 {
+   font-size:4rem;
+   font-family: 'Montserrat', sans-serif;
+   color:#8c1c5f;
+   font-weight:bold;
+   text-align: center;
+}

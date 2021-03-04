@@ -46,6 +46,7 @@ app.post("/", function(req,res) {
                  noc: body[i].cases,
                  notc: body[i].todayCases,
                  nod: body[i].deaths,
+                 notd: body[i].todayDeaths,
                  nor: body[i].recovered,
                  noa: body[i].active,
                  nocr: body[i].critical,
@@ -59,7 +60,7 @@ app.post("/", function(req,res) {
                 res.render("global", {
                   noc: body.cases,
                   nod: body.deaths,
-                  nor: body.recoveries
+                  nor: body.recovered
                 });
               }
               if(chosenOption === "countries")
@@ -84,6 +85,25 @@ app.post("/", function(req,res) {
          console.log('An error',error);
      });
      request.end();
+});
+
+app.post("/country", function(req,res) {
+     const str = req.body.cName;
+     const countryName = str.toLowerCase();
+     // console.log(countryName);
+     let jsonData = "";
+     for(var i=0;i<storeCountryNames.length;i++)
+     {
+       const storedCountryName = _.lowerCase(storeCountryNames[i].name);
+       if(storedCountryName === countryName)
+       {
+         jsonData = storeCountryNames[i];
+         // console.log(storedCountryName);
+         break;
+       }
+     }
+     // console.log(jsonData);
+     res.render("country", {countryDetails: jsonData});
 });
 
 app.listen(process.env.PORT || 3000, function() {

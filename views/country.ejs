@@ -1,5 +1,53 @@
 <%- include('partials/headerCountry') -%>
-
-
-
+<h1>Covid-19 Statistics</h1>
+<table>
+  <tr class="title">
+    <td class="title">Detail</td>
+    <td class="title">Value</td>
+  </tr>
+  <tr>
+    <td>Country Name:</td>
+    <td><%= countryDetails.name %></td>
+  </tr>
+  <tr>
+      <td>Total number of cases:</td>
+      <td><%= countryDetails.noc %></td>
+  </tr>
+  <tr>
+    <td>Total number of cases today:</td>
+      <td><%= countryDetails.notc %></td>
+  </tr>
+  <tr>
+    <td>Total number of deaths:</td>
+    <td><%= countryDetails.nod %></td>
+  </tr>
+  <tr>
+    <td>Total number of recovered cases:</td>
+    <td><%= countryDetails.nor %></td>
+  </tr>
+  <tr>
+    <td>Total number of active cases:</td>
+    <td><%= countryDetails.noa %></td>
+  </tr>
+  <tr>
+    <td>Total number of critical cases:</td>
+    <td><%= countryDetails.nocr %></td>
+  </tr>
+  <tr>
+    <td>Total number of cases per 1 million:</td>
+    <td><%= countryDetails.nocpom %></td>
+  </tr>
+  <tr>
+    <td>Total number of deaths per 1 million:</td>
+    <td><%= countryDetails.nodpom %></td>
+  </tr>
+  <tr>
+    <td>Total number of tests conducted:</td>
+    <td><%= countryDetails.nott %></td>
+  </tr>
+  <tr>
+    <td>Total number of tests per 1 million:</td>
+      <td><%= countryDetails.notpom %></td>
+  </tr>
+</table>
 <%- include('partials/headerCountry') -%>

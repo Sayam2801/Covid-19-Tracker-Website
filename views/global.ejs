@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Global Records</title>
-  </head>
-  <body>
-      
-  </body>
-</html>
+<%- include('partials/headerGlobal') -%>
+<h1>Worldwide Analysis Of Covid-19</h1>
+<table style="background-image:linear-gradient(aqua,yellow,green)">
+  <tr>
+    <td>Total number of cases</td>
+    <td><%= noc %></td>
+  </tr>
+  <tr>
+    <td>Total number of deaths</td>
+    <td><%= nod %></td>
+  </tr>
+  <tr>
+    <td>Total number of recovered cases</td>
+    <td><%= nor %></td>
+  </tr>
+</table>
+<%- include('partials/footer') -%>

@@ -1,36 +1,55 @@
 <%- include('partials/allcheader') -%>
 <div class="country">
-  <div id="country" class="select">Country</div>
   <table>
-              <tr>
+    <% for(var i=0;i<countryDetails.length;i++){ %>
+            <tr>
                 <td>Country</td>
+                <td><%= countryDetails[i].name %></td>
+            </tr>
+            <tr>
                 <td>Cases</td>
-                <td>Today Cases</td>
-                <td>Deaths</td>
-                <td>Today Deaths</td>
-                <td>Recovered Cases</td>
-                <td>Active Cases</td>
-                <td>Critical Cases</td>
-                <td>Cases Per One Million</td>
-                <td>Deaths Per One Million</td>
-                <td>Total tests conducted</td>
+                <td><%= countryDetails[i].noc %></td>
+            </tr>
+            <tr>
+              <td>Today Cases</td>
+              <td><%= countryDetails[i].notc %></td>
+            </tr>
+            <tr>
+              <td>Deaths</td>
+              <td><%= countryDetails[i].nod %></td>
+            </tr>
+            <tr>
+              <td>Today Deaths</td>
+              <td><%= countryDetails[i].notd %></td>
+            </tr>
+            <tr>
+              <td>Recovered Cases</td>
+              <td><%= countryDetails[i].nor %></td>
+            </tr>
+            <tr>
+              <td>Active Cases</td>
+              <td><%= countryDetails[i].noa %></td>
+            </tr>
+            <tr>
+              <td>Critical Cases</td>
+              <td><%= countryDetails[i].nocpom %></td>
+            </tr>
+            <tr>
+              <td>Cases Per One Million</td>
+              <td><%= countryDetails[i].nocr %></td>
+            </tr>
+            <tr>
+              <td>Deaths Per One Million</td>
+              <td><%= countryDetails[i].nodpom %></td>
+            </tr>
+            <tr>
+              <td>Total tests conducted</td>
+              <td><%= countryDetails[i].nott %></td>
+            </tr>
+            <tr>
                 <td>Tests Per One Million</td>
-              </tr>
-        <%     for(var i=0;i<countrydetails.length;i++){ %>
-                <tr>
-                  <li><%= countryDetails[i].coName %></li>
-                  <li><%= countryDetails[i].noc %></li>
-                  <li><%= countryDetails[i].notc %></li>
-                  <li><%= countryDetails[i].nod %></li>
-                  <li><%= countryDetails[i].notd %></li>
-                  <li><%= countryDetails[i].nor %></li>
-                  <li><%= countryDetails[i].noa %></li>
-                  <li><%= countryDetails[i].nocpom %></li>
-                  <li><%= countryDetails[i].nocr %></li>
-                  <li><%= countryDetails[i].nodpom %></li>
-                  <li><%= countryDetails[i].nott %></li>
-                  <li><%= countryDetails[i].notpom %></li>
-               </tr>
+                <td><%= countryDetails[i].notpom %></td>
+            </tr>
         <%  }   %>
   </table>
 </div>

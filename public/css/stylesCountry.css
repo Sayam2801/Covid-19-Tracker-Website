@@ -1,0 +1,32 @@
+table {
+  margin:5rem auto 5rem;
+  border-collapse: collapse;
+}
+tr {
+  line-height: 2;
+}
+body {
+   background-image: linear-gradient(green,yellow,grey,aqua);
+}
+td {
+  font-family: 'Merriweather', serif;
+  font-size:1.5rem;
+  color:#0c0f99;
+  border:2px solid #bf2f15;
+  border-width: thick;
+  border-spacing: 1rem;
+}
+h1 {
+   font-size:4rem;
+   font-family: 'Montserrat', sans-serif;
+   color:#8c1c5f;
+   font-weight:bold;
+   text-align: center;
+}
+.title {
+  font-family: 'Ubuntu', sans-serif;
+  color:#7d4a23;
+  font-size:3rem;
+  font-weight:bold;
+  border-spacing:1rem;
+}
