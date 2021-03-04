@@ -88,3 +88,23 @@ a{
   font-size:2.5rem;
   color:#235e26;
 }
+
+.track {
+  font-size:4rem;
+  font-weight:bolder;
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  border:2px solid #b00b3f;
+  border-style: dotted;
+  background-color: #c46b45;
+  width:60rem;
+  text-align: center;
+  display:block;
+  margin:auto;
+  margin-top:3rem;
+  border-radius:20%;
+}
+
+.track:hover {
+  background-color: #db2525;
+}
