@@ -1,14 +1,14 @@
 <%- include('partials/header2') -%>
-     <h1>Covid-19 Tracker</h1>
-     <p>Options are: </p>
+     <h1 class="track">Welcome to Covid-19 Tracker</h1>
+     <p>You have three options:</p>
      <ul>
-       <li>Continent-Wise</li>
-       <li>Country-Wise</li>
-       <li>Location-Wise</li>
-    </ul>
+       <li>Global/Worldwide</li>
+       <li>All countries</li>
+       <li>Country</li>
+     </ul>
      <form action="/" method="post">
-       <h1>Enter your option:</h1>
-       <input type="text" class="enteredOption" name="option" placeholder="global/countries/countryhelper" autocomplete="off">
+       <h1 class="enter">Enter your option:</h1>
+       <input type="text" class="enteredOption" name="option" placeholder="global/countries/country" autocomplete="off">
        <button class="btn btn-primary" type="submit" name="button" >Submit</button>
      </form>
 <%- include('partials/footer') -%>

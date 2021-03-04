@@ -15,6 +15,7 @@ td {
   color:#0c0f99;
   border:2px solid #bf2f15;
   border-width: thick;
+  text-align: center;
 }
 h1 {
    font-size:4rem;
@@ -22,4 +23,59 @@ h1 {
    color:#8c1c5f;
    font-weight:bold;
    text-align: center;
+}
+img {
+  width:20px;
+  height:20px;
+  border-radius:100%;
+  margin:5px auto;
+}
+.last-section {
+  background-color: aqua;
+}
+
+a{
+  font-size:2rem;
+  margin:1rem 1rem;
+}
+.smh {
+   display:block;
+   margin:auto;
+   margin-left:44%;
+}
+
+.my-social-media {
+  border:2px solid #29cc16;
+  border-width: thick;
+  border-style: solid;
+  border-radius: 20%;
+  text-decoration: none;
+  width:35rem;
+  display:block;
+  margin:auto;
+  margin-bottom:2rem;
+}
+
+.my-social-media:hover {
+  border:2px solid #421b54;
+  border-style:double;
+  width:35rem;
+  border-radius:20%;
+  text-transform: capitalize;
+}
+
+.enter {
+  text-decoration: none;
+  font-weight:bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size:2.5rem;
+  color:#235e26;
+}
+p {
+  color:red;
+  font-size:1.4rem;
+  margin-top:3rem;
+  font-family: 'Arimo', sans-serif;
+  font-weight:bold;
+  text-align:center;
 }

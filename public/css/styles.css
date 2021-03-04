@@ -9,6 +9,7 @@ h1 {
   color:blue;
   text-decoration: underline;
   text-decoration-color: #6b6715;
+  margin-top:4rem;
 }
 p {
   color:red;
@@ -27,22 +28,63 @@ label {
   color:#702200;
   font-weight:bold;
 }
+
 input {
   border:2px solid #057368;
   border-radius: 10%;
   border-color: #bf75be;
   background-color: #b89cb7;
   display: block;
-  margin:auto;
+  margin:2rem auto;
 }
+
 button {
-  margin-top:1rem;
+  margin-bottom:3rem;
 }
+
 span {
   font-weight:bold;
   color:#a605a3;
 }
+
 ul {
   text-align: center;
     list-style-position: inside;
+}
+
+.last-section {
+  background-color: aqua;
+}
+
+a{
+  font-size:2rem;
+  margin:1rem 1rem;
+}
+
+.my-social-media {
+  border:2px solid #29cc16;
+  border-width: thick;
+  border-style: solid;
+  border-radius: 20%;
+  text-decoration: none;
+  width:35rem;
+  display:block;
+  margin:auto;
+  margin-bottom:2rem;
+}
+
+.my-social-media:hover {
+  border:2px solid #421b54;
+  border-style:double;
+  width:35rem;
+  border-radius:20%;
+  text-transform: capitalize;
+}
+
+.enter {
+  text-decoration: none;
+  font-weight:bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size:2.5rem;
+  color:#235e26;
 }

@@ -1,9 +1,15 @@
 <%- include('partials/allcheader') -%>
-  <table>
-    <% for(var i=0;i<countryDetails.length;i++){ %>
+<h1 class="jumbotron jumbotron-fluid">Here's a complete analysis of Covid-19 all over the world!</h1>
+<% for(var i=0;i<countryDetails.length;i++){ %>
+      <table>
             <tr>
-                <td>Country</td>
-                <td><%= countryDetails[i].name %></td>
+              <td>Country</td>
+              <td><%= countryDetails[i].name %></td>
+            <tr>
+              <% if(countryDetails[i].name != "World"){ %>
+                  <td>Flag</td>
+                  <td><img src=<%= "https://www.countryflags.io/" + cCodes[countryDetails[i].name] + "/flat/64.png" %> alt="countryFlag-img"></td>
+              <%  } %>
             </tr>
             <tr>
                 <td>Cases</td>
@@ -49,6 +55,6 @@
                 <td>Tests Per One Million</td>
                 <td><%= countryDetails[i].notpom %></td>
             </tr>
-        <%  }   %>
-  </table>
+      </table>
+<%  }   %>
 <%- include('partials/footer') -%>
